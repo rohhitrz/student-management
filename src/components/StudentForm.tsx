@@ -61,9 +61,10 @@ export const StudentForm: React.FC<StudentFormProps> = ({ student, onClose }) =>
               <input
                 type="text"
                 name="name"
+                placeholder='Enter your name..'
                 required
                 defaultValue={student?.name}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                className="mt-1 block w-full rounded-md border-black-500 shadow-sm focus:border-blue-500 focus:ring-blue-500"
               />
             </div>
 
@@ -125,6 +126,7 @@ export const StudentForm: React.FC<StudentFormProps> = ({ student, onClose }) =>
               <input
                 type="tel"
                 name="phone"
+                placeholder='Enter your phone number..'
                 required
                 pattern="[0-9]{10}"
                 defaultValue={student?.contact.phone}
@@ -137,6 +139,7 @@ export const StudentForm: React.FC<StudentFormProps> = ({ student, onClose }) =>
               <input
                 type="email"
                 name="email"
+                placeholder='Enter your email..'
                 required
                 defaultValue={student?.contact.email}
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
@@ -152,6 +155,7 @@ export const StudentForm: React.FC<StudentFormProps> = ({ student, onClose }) =>
                 <input
                   type="text"
                   name="street"
+                  placeholder='Enter your street..'
                   required
                   defaultValue={student?.address.street}
                   className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
@@ -163,6 +167,7 @@ export const StudentForm: React.FC<StudentFormProps> = ({ student, onClose }) =>
                 <input
                   type="text"
                   name="city"
+                  placeholder='Enter your city..'
                   required
                   defaultValue={student?.address.city}
                   className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
@@ -174,6 +179,7 @@ export const StudentForm: React.FC<StudentFormProps> = ({ student, onClose }) =>
                 <input
                   type="text"
                   name="state"
+                  placeholder='Enter your state..'
                   required
                   defaultValue={student?.address.state}
                   className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
@@ -185,6 +191,7 @@ export const StudentForm: React.FC<StudentFormProps> = ({ student, onClose }) =>
                 <input
                   type="text"
                   name="postalCode" 
+                  placeholder='Enter your postal code..'
                   required
                   pattern="[0-9]{6}"
                   defaultValue={student?.address.postalCode}
